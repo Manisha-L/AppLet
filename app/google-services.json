@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "878126901642",
+    "firebase_url": "https://applet-9903a.firebaseio.com",
+    "project_id": "applet-9903a",
+    "storage_bucket": "applet-9903a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878126901642:android:997d01c96219231943c073",
+        "android_client_info": {
+          "package_name": "com.W9221214.AppLet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878126901642-c5n5isb3cjgr8ibdgghpglnm2kku207i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB54vuEuiUm-SPzegzhCI0wyIjSv0aoaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878126901642-c5n5isb3cjgr8ibdgghpglnm2kku207i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

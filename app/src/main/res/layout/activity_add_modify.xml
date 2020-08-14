@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.Add_ModifyProperty">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/add_modify"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Property Details" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_modify">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/update_add_margin_left_titles"
+                android:layout_marginTop="@dimen/update_add_margin_top_titles"
+                android:text="@string/property_title"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/activity_add_modify_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textShortMessage" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/update_add_margin_left_titles"
+                android:layout_marginTop="@dimen/update_add_margin_top_titles"
+                android:hint="Url"
+                android:text="@string/property_pictures"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/activity_add_modify_media_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            </RelativeLayout>
+
+            <Button
+                android:background="@drawable/btn_background"
+                android:id="@+id/activity_add_modify_choose_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Property Image"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/update_add_margin_left_titles"
+                android:layout_marginTop="@dimen/update_add_margin_top_titles"
+                android:text="@string/description"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/activity_add_modify_description_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textLongMessage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/update_add_margin_left_titles"
+                android:layout_marginTop="@dimen/update_add_margin_top_titles"
+                android:text="@string/area_sqft"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/activity_add_modify_area_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="sqft"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/update_add_margin_left_titles"
+                android:layout_marginTop="@dimen/update_add_margin_top_titles"
+                android:text="@string/number_of_rooms"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/activity_add_modify_num_of_rooms_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/update_add_margin_left_titles"
+                android:layout_marginTop="@dimen/update_add_margin_top_titles"
+                android:text="@string/price"
+                android:textStyle="bold"
+                android:id="@+id/activity_add_modify_price_text_view"/>
+
+            <EditText
+                android:id="@+id/activity_add_modify_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Enter in Pounds"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/update_add_margin_left_titles"
+                android:layout_marginTop="@dimen/update_add_margin_top_titles"
+                android:text="@string/location"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/activity_add_modify_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address"
+                android:inputType="textLongMessage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/update_add_margin_left_titles"
+                android:layout_marginTop="@dimen/update_add_margin_top_titles"
+                android:text="@string/number_of_bedrooms"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/activity_add_modify_num_of_bedrooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/update_add_margin_left_titles"
+                android:layout_marginTop="@dimen/update_add_margin_top_titles"
+                android:text="@string/contact"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:id="@+id/activity_add_modify_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/update_add_margin_left_titles"
+                android:layout_marginTop="@dimen/update_add_margin_top_titles"
+                android:text="Status"
+                android:textStyle="bold" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/activity_add_modify_available_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/update_add_margin_left_titles"
+                    android:checked="true"
+                    android:text="Available" />
+
+                <RadioButton
+                    android:id="@+id/activity_add_modify_occupied_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/update_add_margin_left_titles"
+                    android:text="Occupied" />
+            </RadioGroup>
+
+
+            <Button
+                android:background="@drawable/btn_background"
+                android:id="@+id/activity_add_modify_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/update_add_margin_top_titles"
+                android:layout_marginBottom="10dp"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
